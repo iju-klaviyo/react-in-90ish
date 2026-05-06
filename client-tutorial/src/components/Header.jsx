@@ -2,10 +2,11 @@
 // TODO: Import Link and NavLink from react-router-dom
 
 import ApiKeyPrompt from './ApiKeyPrompt.jsx';
+// TODO: Import useTheme from '../context/ThemeContext.jsx'
 
 export default function Header() {
   // ⏸️ WORKSHOP STEP 5: Add Context
-  // TODO: Import and use useTheme hook here
+  // TODO: Use the hook here
   // const { theme, toggleTheme } = useTheme()
 
   return (
