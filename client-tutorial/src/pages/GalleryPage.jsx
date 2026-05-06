@@ -10,7 +10,7 @@ export default function GalleryPage() {
   // TODO: Replace manual fetch with usePokemonGallery hook
   // const { data, loading, error, refetch } = usePokemonGallery();
 
-  // Temporary placeholder data
+  // TODO: Replace placeholder data with real state
   const data = [];
   const loading = false;
   const error = null;
