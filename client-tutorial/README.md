@@ -37,7 +37,7 @@ A PokAImon Generator app where you can:
 
 Watch the full workshop on YouTube:
 
-[![React 19 Workshop](https://img.youtube.com/vi/tqjJrXd27m4/0.jpg)](https://www.youtube.com/watch?v=tqjJrXd27m4)
+[React 19 Workshop](https://www.youtube.com/watch?v=tqjJrXd27m4)
 
 ---
 
@@ -71,25 +71,25 @@ Support the project by checking out our sponsors:
 cd client-tutorial
 ```
 
-2. **Copy environment file:**
+1. **Copy environment file:**
 
 ```bash
 cp .env.example .env
 ```
 
-3. **Install dependencies** (already done if you followed setup):
+1. **Install dependencies** (already done if you followed setup):
 
 ```bash
 npm install
 ```
 
-4. **Start the development server:**
+1. **Start the development server:**
 
 ```bash
 npm run dev
 ```
 
-5. **Make sure the backend is running:**
+1. **Make sure the backend is running:**
 
 ```bash
 # In another terminal, from the project root:
@@ -128,7 +128,7 @@ function YourComponent() {
       body: JSON.stringify({
         doodle_data: base64,
         gemini_api_key: apiKey, // Include the API key
-      }),
+      }),import { useState } from "react";
     });
     // ... handle response
   };
