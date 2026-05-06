@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import Spinner from "../components/Spinner.jsx";
 // TODO: Import usePokemonGallery from '../hooks/usePokemonGallery.js'
 import { usePokemonGallery } from "../hooks/usePokemonGallery.js";
@@ -7,25 +7,6 @@ const API = import.meta.env.VITE_BACKEND_URL || "http://localhost:3001";
 
 export default function GalleryPage() {
   const { data, loading, error, refetch } = usePokemonGallery();
-
-  useEffect(() => {
-    const fetchGallery = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        const res = await fetch(`${API}/api/gallery`);
-        if (!res.ok) throw new Error("Failed to load gallery");
-        const json = await res.json();
-        setData(json);
-      } catch (e) {
-        setError(e);
-      } finally {
-        setLoading(false);
-      }
-    };
-  
-    fetchGallery();
-  }, []);
 
   // ⏸️ WORKSHOP STEP 6: Add useMemo for Sorting
   const [sortBy, setSortBy] = useState("newest");
