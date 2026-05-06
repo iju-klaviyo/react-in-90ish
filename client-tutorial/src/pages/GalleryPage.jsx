@@ -2,6 +2,7 @@
 // TODO: Import useState and useEffect
 // TODO: Import useMemo from 'react' for Step 6
 import Spinner from "../components/Spinner.jsx";
+// TODO: Import usePokemonGallery from '../hooks/usePokemonGallery.js'
 
 const API = import.meta.env.VITE_BACKEND_URL || "http://localhost:3001";
 
