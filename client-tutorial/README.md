@@ -756,13 +756,13 @@ Change `{data.map(...)` to `{processedData.map(...)}`
 
 **What you'll learn:** Code splitting and lazy loading
 
-### 8.1 Add imports
+### 7.1 Add imports
 
 ```jsx
 import { lazy, Suspense } from "react";
 ```
 
-### 8.2 Replace regular imports with lazy
+### 7.2 Replace regular imports with lazy
 
 Comment out:
 
@@ -778,7 +778,7 @@ const GeneratorPage = lazy(() => import("./pages/GeneratorPage.jsx"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage.jsx"));
 ```
 
-### 8.3 Wrap Routes in Suspense
+### 7.3 Wrap Routes in Suspense
 
 ```jsx
 <main className="flex-1 container mx-auto p-4 lg:p-8">
@@ -801,7 +801,7 @@ const GalleryPage = lazy(() => import("./pages/GalleryPage.jsx"));
 
 **What you'll learn:** Error handling in React
 
-### 9.1 Implement ErrorBoundary.jsx
+### 8.1 Implement ErrorBoundary.jsx
 
 ```jsx
 import { Component } from "react";
@@ -850,7 +850,7 @@ export default class ErrorBoundary extends Component {
 }
 ```
 
-### 9.2 Update App.jsx
+### 8.2 Update App.jsx
 
 Add import:
 
