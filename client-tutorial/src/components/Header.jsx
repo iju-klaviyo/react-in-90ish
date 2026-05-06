@@ -1,10 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import ApiKeyPrompt from './ApiKeyPrompt.jsx';
+import { useTheme } from "../context/ThemeContext.jsx";
 
 export default function Header() {
   // ⏸️ WORKSHOP STEP 5: Add Context
-  // TODO: Import and use useTheme hook here
-  // const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme()
 
   return (
     <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-10 transition-colors">
